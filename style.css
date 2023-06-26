@@ -70,13 +70,9 @@ img {
 
 dt {
     font-weight: bold;
+    margin-top:75px;
 }
 .dates {
-    margin-top: 50px;
     font-size: 25px;
     text-align: center;
-}
-.title {
-    text-align: center;
-    margin-top: 75px;
 }
