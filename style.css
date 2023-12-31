@@ -64,7 +64,7 @@ img {
 
 #ticketText {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   width: 350px;
   transform: translate(-50%, -50%);
@@ -74,7 +74,7 @@ img {
 /* Existing CSS */
 #ticket {
   height: auto; /* You might want to change this to auto */
-  width: 500px;
+  width: 600px;
   max-width: 100%; /* Ensures that the image is not wider than its container */
   max-height: 250px; /* Optional, to ensure it doesn't get too large */
 }
@@ -89,7 +89,7 @@ img {
     width: auto; /* Maintain aspect ratio */
   }
   #ticketText {
-    font-size: 0.7em; /* Smaller font size for mobile screens */
+    font-size: 0.75em; /* Smaller font size for mobile screens */
     width: auto; /* Optional: adjust width if needed */
   }
   header {
