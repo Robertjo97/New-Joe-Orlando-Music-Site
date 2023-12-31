@@ -88,6 +88,9 @@ img {
     font-size: 0.7em; /* Smaller font size for mobile screens */
     width: auto; /* Optional: adjust width if needed */
   }
+  header {
+    font-size: 18px;
+  }
 }
 
 
