@@ -1,0 +1,1 @@
+Convert the list of dates to an array that holds them. pull the first from the array to display on the ticket on the homepage.
