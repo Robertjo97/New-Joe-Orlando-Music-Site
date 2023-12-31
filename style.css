@@ -82,7 +82,7 @@ img {
 /* Media Query for Mobile Screens */
 @media screen and (max-width: 600px) {
   body {
-    padding:5px;
+    padding: 5px;
   }
   #ticket {
     max-height: 100%; /* Adjust the size for mobile screens */
@@ -95,8 +95,11 @@ img {
   header {
     font-size: 18px;
   }
+  img {
+    width:250px;
+    height:auto;
+  }
 }
-
 
 /* #ticket {
   height:250px;
@@ -134,4 +137,3 @@ dt {
   font-size: 25px;
   text-align: center;
 }
-
