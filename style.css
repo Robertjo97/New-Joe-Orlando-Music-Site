@@ -51,12 +51,14 @@ img {
   position: relative;
   text-align: center;
   color: black;
+
 }
 
 #ticketText {
   position: absolute;
   top: 50%;
   left: 50%;
+  width:350px;
   transform: translate(-50%, -50%);
 }
 
