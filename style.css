@@ -89,7 +89,7 @@ img {
     width: auto; /* Maintain aspect ratio */
   }
   #ticketText {
-    font-size: 0.75em; /* Smaller font size for mobile screens */
+    font-size: 0.7em; /* Smaller font size for mobile screens */
     width: auto; /* Optional: adjust width if needed */
   }
   header {
