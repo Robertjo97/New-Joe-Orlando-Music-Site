@@ -1,7 +1,48 @@
-let writeTicket = () => {
-  let ticket = document.getElementById("ticketText");
-  ticket.innerHTML =
-    "<h1>Next Show:</h1><h3>July 8, 2023 6:30pm-9:30pm</h3><h4>Brickyard Counter & Bar, El Dorado Hills, CA<h4><h4>Lando Collective</h4>";
+class Show {
+  constructor(date, location, band) {
+    this.date = date;
+    this.location = location;
+    this.band = band;
+  }
+}
+
+let addShow = () => {
+  let date = document.getElementById("date");
+  let location = document.getElementById("location");
+  let band = document.getElementById("band");
+
+  let show = new Show(date, location, band);
+
+  let request = new XMLHttpRequest();
+  request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  request.open("POST", "./dataEntry.php");
+  request.send('show=' + JSON.stringify(show));
 };
 
-writeTicket();
+let writeTicket = (show) => {
+  let ticket = document.getElementById("ticketText");
+  ticket.innerHTML =
+    "<h2>Next Show:</h2>" +
+    "<h3>" +
+    show.date +
+    "</h3>" +
+    "<h3>" +
+    show.location +
+    "</h3>" +
+    "<h3>" +
+    show.band +
+    "</h3>";
+};
+
+let pullShow = () => {
+  let request = new XMLHttpRequest();
+  request.onreadystatechange = () => {
+    if (request.readyState == 4 && request.status == 200) {
+      writeTicket(JSON.parse(request.responseText));
+    }
+  };
+  request.open("GET", "./pullShow.php");
+  request.send();
+};
+
+pullShow();
