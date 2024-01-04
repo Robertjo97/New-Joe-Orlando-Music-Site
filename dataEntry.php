@@ -39,15 +39,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 </head>
 <body>
     <div id="showContainer">
+        <h3>Hi Dad!<br><br>Enter your shows here:</h3>
     <form method="post">
         <input type="text" name="date" placeholder="Date">
+        <br>
         <input type="text" name="location" placeholder="Location">
+        <br>
         <input type="text" name="band" placeholder="Band">
+        <br>
         <button>Submit</button>
     </form>
     </div>
     <div id="mediaContainer">
-        <input type="text" placeholder="media">
+        <h3>Enter your pics or vids here: </h3>
+        <input id="mediaUpload" type="file">
+        <button id="mediaSubmit">Submit</button>
     </div>
 </body>
 </html>
