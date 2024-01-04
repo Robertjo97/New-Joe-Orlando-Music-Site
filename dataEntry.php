@@ -28,21 +28,27 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
 }
 ?>
-
+<!--Make it modular. Add a show, Delete last show, maybe view them in a list?-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Entry</title>
+    <link type="text/css" rel="stylesheet" href="./dataStyles.css">
 </head>
 <body>
+    <div id="showContainer">
     <form method="post">
         <input type="text" name="date" placeholder="Date">
         <input type="text" name="location" placeholder="Location">
         <input type="text" name="band" placeholder="Band">
         <button>Submit</button>
     </form>
+    </div>
+    <div id="mediaContainer">
+        <input type="text" placeholder="media">
+    </div>
 </body>
 </html>
 
