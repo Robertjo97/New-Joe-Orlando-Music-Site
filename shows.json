@@ -1,12 +1,12 @@
 [
-    {
-        "date": "July 8, 2023 6:30pm-9:30pm",
-        "location": "Brickyard Counter & Bar, El Dorado Hills, CA",
-        "band": "Lando Collective"
-    },
-    {
-        "date": "October 19th, 1997",
-        "location": "Merced, CA",
-        "band": "No Comply"
-    }
+  {
+    "date": "July 8, 2023 6:30pm-9:30pm",
+    "location": "Brickyard Counter & Bar, El Dorado Hills, CA",
+    "band": "Lando Collective"
+  },
+  {
+    "date": "October 19th, 1997",
+    "location": "Merced, CA",
+    "band": "No Comply"
+  }
 ]
