@@ -1,24 +1,3 @@
-class Show {
-  constructor(date, location, band) {
-    this.date = date;
-    this.location = location;
-    this.band = band;
-  }
-}
-
-let addShow = () => {
-  let date = document.getElementById("date").value;
-  let location = document.getElementById("location").value;
-  let band = document.getElementById("band").value;
-
-  let show = new Show(date, location, band);
-
-  let request = new XMLHttpRequest();
-  request.open("POST", "./dataEntry.php", true);
-  request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  request.send('show=' + JSON.stringify(show));
-};
-
 let writeTicket = (show) => {
   let ticket = document.getElementById("ticketText");
   ticket.innerHTML =
