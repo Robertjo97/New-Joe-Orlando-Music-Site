@@ -38,6 +38,7 @@ let listShows = () => {
   request.onreadystatechange = () => {
     if (request.readyState == 4 && request.status == 200) {
       shows = JSON.parse(request.responseText);
+      //shows.sort((a, b) => new Date(a.date) - new Date(b.date)); later
       display(shows);
     }
   };
