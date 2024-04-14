@@ -169,4 +169,59 @@ dt {
   }
 }
 
+/* Contact Form Styling within Container */
+/* Contact Form Container Styling */
+.container {
+  background: #222; /* Dark background for better visibility */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  margin-top: 75px;
+  margin-bottom: 20px;
+  width: 50%; /* Adjust width to 50% of the parent element */
+  max-width: 600px; /* Maximum width to prevent overly wide forms */
+  min-width: 300px; /* Minimum width to maintain usability on smaller screens */
+  margin-left: auto; /* Centers the form horizontally */
+  margin-right: auto; /* Centers the form horizontally */
+}
 
+.container form {
+  display: grid;
+  grid-gap: 15px; /* Consistent spacing between fields */
+}
+
+.container label {
+  color: #ccc; /* Light grey color for labels */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container textarea {
+  background: #333; /* Slightly lighter background for input fields */
+  border: 1px solid #555; /* Subtle borders for inputs */
+  color: white; /* Text color */
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%; /* Ensures inputs stretch to fill container */
+}
+
+.container input[type="submit"] {
+  background-color: #5c67f2; /* Vibrant color for the submit button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #4a54e1; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 80%; /* Makes the form wider on smaller screens for better readability */
+  }
+}
