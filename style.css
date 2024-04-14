@@ -200,28 +200,28 @@ dt {
 .container textarea {
   background: #333; /* Slightly lighter background for input fields */
   border: 1px solid #555; /* Subtle borders for inputs */
-  color: white; /* Text color */
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%; /* Ensures inputs stretch to fill container */
+  color: white; /* Text color for readability */
+  padding: 8px 10px; /* Adequate padding for text entries */
+  border-radius: 4px; /* Rounded corners for a softer look */
+  width: 100%; /* Full width minus padding */
+  box-sizing: border-box; /* Includes padding and border in the element's width */
+  resize: none;
 }
 
 .container input[type="submit"] {
-  background-color: #5c67f2; /* Vibrant color for the submit button */
+  background-color: grey; /* Vibrant color for the submit button */
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: auto; /* Automatic width based on content */
+  margin-top: 10px; /* Adds space above the submit button */
 }
 
-.container input[type="submit"]:hover {
-  background-color: #4a54e1; /* Darker shade on hover */
-}
-
-@media (max-width: 768px) {
-  .container {
-      width: 80%; /* Makes the form wider on smaller screens for better readability */
-  }
+.container form {
+  display: grid;
+  grid-gap: 15px; /* Consistent spacing between fields */
+  grid-template-columns: 1fr; /* Single column layout */
 }
