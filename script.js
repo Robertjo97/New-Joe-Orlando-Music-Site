@@ -1,16 +1,16 @@
 let writeTicket = (show) => {
   let ticket = document.getElementById("ticketText");
   ticket.innerHTML =
-    "<h2>Next Show:</h2>" +
-    "<h3>" +
+    "<h4>Next Show:</h4>" +
+    "<p>" +
     show.date +
-    "</h3>" +
-    "<h3>" +
+    "</p>" +
+    "<p>" +
     show.location +
-    "</h3>" +
-    "<h3>" +
+    "</p>" +
+    "<p>" +
     show.band +
-    "</h3>";
+    "</p>";
 };
 
 let pullShow = () => {
